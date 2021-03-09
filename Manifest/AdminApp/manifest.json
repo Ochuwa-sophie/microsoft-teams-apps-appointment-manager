@@ -6,10 +6,10 @@
     "id": "3cb20741-0e65-4a0a-9e3f-19afe5439a8b",
     "packageName": "com.microsoft.teams.app.appointmentmanager.admin",
     "developer": {
-        "name": "Microsoft",
-        "websiteUrl": "https://www.microsoft.com/todo",
-        "privacyUrl": "https://www.microsoft.com/todo",
-        "termsOfUseUrl": "https://www.microsoft.com/todo"
+        "name": "Infinion",
+        "websiteUrl": "https://www.infinion.co/todo",
+        "privacyUrl": "https://www.infinion.co/todo",
+        "termsOfUseUrl": "https://www.infinion.co/todo"
     },
     "icons": {
         "color": "color.png",
