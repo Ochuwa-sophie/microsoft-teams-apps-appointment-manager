@@ -7,9 +7,9 @@
     "packageName": "com.microsoft.teams.app.appointmentmanager.agent",
     "developer": {
         "name": "Microsoft",
-        "websiteUrl": "https://www.microsoft.com/todo",
-        "privacyUrl": "https://www.microsoft.com/todo",
-        "termsOfUseUrl": "https://www.microsoft.com/todo"
+        "websiteUrl": "https://www.infinion.com/todo",
+        "privacyUrl": "https://www.infinion.com/todo",
+        "termsOfUseUrl": "https://www.infinion.com/todo"
     },
     "icons": {
         "color": "color.png",
@@ -30,7 +30,7 @@
     "accentColor": "#2d47b6",
     "configurableTabs": [
         {
-            "configurationUrl": "https://<YOUR HOST DOMAIN>/consult/scheduleconfig",
+            "configurationUrl": "https://consultationplanner.azurewebsites.net/consult/scheduleconfig",
             "canUpdateConfiguration": true,
             "scopes": [
                 "team"
@@ -41,7 +41,7 @@
         {
             "entityId": "my",
             "name": "My Appointments",
-            "contentUrl": "https://<YOUR HOST DOMAIN>/consult/my",
+            "contentUrl": "https://consultationplanner.azurewebsites.net/consult/my",
             "scopes": [
                 "personal"
             ]
@@ -49,7 +49,7 @@
     ],
     "bots": [
         {
-            "botId": "<YOUR BOT ID>",
+            "botId": "7fbb0f44-00bb-4dd8-a503-878cbfaca0f5",
             "scopes": [
                 "personal",
                 "team"
@@ -61,7 +61,7 @@
     ],
     "composeExtensions": [
         {
-            "botId": "<YOUR BOT ID>",
+            "botId": "7fbb0f44-00bb-4dd8-a503-878cbfaca0f5",
             "canUpdateConfiguration": false,
             "commands": [
                 {
@@ -82,11 +82,11 @@
         "messageTeamMembers"
     ],
     "validDomains": [
-        "<YOUR HOST DOMAIN>"
+        "consultationplanner.azurewebsites.net"
     ],
     "webApplicationInfo": {
-        "id": "<AZURE AD APP ID FOR SSO>",
-        "resource": "api://<YOUR HOST DOMAIN>/<AZURE AD APP ID FOR SSO>",
+        "id": "2f9e8494-ff84-4ae1-a84e-186f69a86099",
+        "resource": "api://consultationplanner.azurewebsites.net/2f9e8494-ff84-4ae1-a84e-186f69a86099",
         "applicationPermissions": [
             "Member.Read.Group"
         ]

@@ -32,20 +32,20 @@
         {
             "entityId": "admin",
             "name": "Configuration",
-            "contentUrl": "https://<YOUR HOST DOMAIN>/admin",
+            "contentUrl": "https://consultationplanner.azurewebsites.net/admin",
             "scopes": [
                 "personal"
             ]
         }
     ],
     "webApplicationInfo": {
-        "id": "<AZURE AD APP ID FOR SSO>",
-        "resource": "api://<YOUR HOST DOMAIN>/<AZURE AD APP ID FOR SSO>"
+        "id": "2f9e8494-ff84-4ae1-a84e-186f69a86099",
+        "resource": "api://consultationplanner.azurewebsites.net/2f9e8494-ff84-4ae1-a84e-186f69a86099"
     },
     "permissions": [
         "identity"
     ],
     "validDomains": [
-        "<YOUR HOST DOMAIN>"
+        "consultationplanner.azurewebsites.net"
     ]
 }
