@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+ width: 100%;
+ height: auto;
+}
+.welcome{
+    display: flex;
+}
+.wd50{
+    width: 50%;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.d-none{
+    display: none;
+}
+/* .wd100{
+    width: 100%;
+} */
+.font{
+    font-family: 'Montserrat', sans-serif;
+}
+.fs14{
+    font-size: 14px;
+}
+.mob-logo{
+    display: none;
+}
+.logo{
+    width: 100%;
+    height: 100%; 
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb20{
+    margin-top: 20px !important;
+}
+.center{
+    text-align: center;
+}
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 400px;
+    margin: 300px auto 0;
+}
+.account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 40px auto 0;
+}
+.cus-blue{
+    color: #0073A1;
+}
+.accBtn{
+    background: #004967;
+    width: 35%;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.acc-input{
+    border: 1px solid #D1D1D1;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.textarea{
+    border: 1px solid #D1D1D1;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+    width: 100%;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.verify-input{
+    width: 60%;
+    border: 1px solid #D1D1D1;
+    padding: 10px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width:1024px){
+    .account{
+        width: 50%;
+    }
+    .account-form {
+        width: 50%;
+    }
+}
+@media (max-width:768px){
+    .account{
+        width: 50%;
+        margin: 250px auto 0;
+    }
+    .welcome{
+        flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+    .mob-logo{
+        display: block;
+        width: 100%;
+    }
+    .wd50{
+        width: 100%;
+    }
+    .acc-input{
+        width: 100%;
+    }
+    .accBtn{
+        width: 35%;
+    }
+    .fs14{
+        font-size: 14px;
+    }
+    .fs18{
+        font-size: 20px;
+    }
+}
+@media (max-width:425px){
+    .account{
+        width: 70% !important;
+        margin: 180px auto 0 !important;
+    }
+    .account-form{
+        width: 70%;
+    }
+    .fs18{
+        font-size: 16px;
+    }
+    .fs14{
+        font-size: 12px;
+    }
+    .accBtn{
+        font-size: 12px;
+    }
+}
+@media(max-width:375px){
+    .account{
+        width: 80% !important;
+        margin: 160px auto 0 !important;
+    }
+    .account-form{
+        width: 80%;
+    }
+}

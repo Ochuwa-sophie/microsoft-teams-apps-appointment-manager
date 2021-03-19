@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+     <div class="welcome">
+         <div class="wd50">
+             <img src="./logo.png" class="logo" alt="union bank logo">
+             <img src="./Union Bank Mobile.png" alt="union logo Mobile" class="mob-logo">
+         </div>
+         <div class="wd50">
+             <div class="account-form">
+                 <h3 class="cus-blue fs18">APPOINTMENT MANAGER</h3>
+              <form action="">
+                    <div class="mb20">
+                        <label for="name" class="cus-blue fs14 mb10">Name</label>
+                        <input type="text" class="acc-input mt20 name" name="name" placeholder="Monica Lewinsky" value="">
+                    </div>
+                    <div class="mb20">
+                        <label for="account num" class="cus-blue fs14 mb10">Account Number</label>
+                        <input type="number" class="acc-input mt20 acct-Num" name="account-number" placeholder="4372593732" value="">
+                    </div>
+                    <div class="mb20">
+                        <label for="email" class="cus-blue fs14 mb10">Email</label>
+                        <input type="email" class="acc-input mt20 email" name="email" placeholder="monica@gmail.com" value="">
+                    </div>
+                    <div class="mb20">
+                        <label for="category" class="cus-blue fs14 mb10">Compliant Category</label>
+                        <select name="category" id="" class="acc-input mt20 category">
+                            <option value="" class="font">Select</option>
+                            <option value="Transfer Error" class="font">Transfer Error</option>
+                            <option value="Stolen ATM Card" class="font">Stolen ATM Card</option>
+                            <option value="Bank Loan" class="font">Bank Loan</option>
+                            <option value="Block Account" class="font">Block Account</option>
+                            <option value="Offers and Promotions" class="font">Offers and Promotions</option>
+                            <option value="Change Bank Details" class="font">Change Bank Details </option>
+                        </select>
+                    </div>
+                    <div class="mb20">
+                        <div class="mb20">
+                            <label for="start" class="cus-blue fs14 mb10">Available Date 1</label>
+                            <input type="datetime-local" name="time" class="acc-input mb10" id="Date1">
+                        </div>
+                        <div>
+                            <label for="start" class="cus-blue fs14 mb10">Available Date 2</label>
+                            <input type="datetime-local" name="time" class="acc-input" id="Date2">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="compliant" class="cus-blue fs14 mb10">Complaint</label>
+                        <textarea name="compliant" id="" cols="30" class="textarea mt20" placeholder="Write a Message" rows="10"></textarea>
+                    </div>
+                    <div class="center">
+                        <button class="accBtn" id="submit">SUBMIT</button>
+                    </div>
+                    <div class="errMessage red"></div>
+                    <div class="successMessage green"></div>
+                </form>
+             </div>
+         </div>
+     </div>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>
