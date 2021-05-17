@@ -6,32 +6,41 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Frontend.Models;
+using Frontend.Repository;
 
 namespace Frontend.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IRepository repo;
+        private readonly SendMail sendEmail;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IRepository repo, SendMail sendEmail)
         {
-            _logger = logger;
+            this.repo = repo;
+            this.sendEmail = sendEmail;
         }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
+        public ActionResult Index()
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        
+        [HttpGet]
+        public ActionResult GetUserInput(Customer model)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var AccountNumber = repo.GetAccountNumber(model);
+            var SendMail = sendEmail.NewEmail(model.Email, "Infinion Bank OTP", "" );
+
+            
+            return LocalRedirect("/Home/OTP");
         }
+
+        // public ActionResult OTP( )
+        // {
+        //     var OTP = SendMail.
+        // }
+
+
+
     }
 }

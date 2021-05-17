@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Frontend.Models;
+using Frontend.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +31,11 @@ namespace Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<sophiedbContext>(options => 
+            options.UseSqlServer(Configuration.GetConnectionString("sophiedbContext") ) );
+
+            services.AddScoped<IRepository, CustomerRepository>();
+            services.AddSingleton<SendMail>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
